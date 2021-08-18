@@ -1,0 +1,168 @@
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: whitesmoke;
+}
+
+nav{
+    width: 100%;
+    height: 74px;
+    background-color: #293867;
+    color: white;
+    position: relative;
+    display: flex;
+    align-items: center; 
+}
+
+nav::after{
+    content: '';
+    position: absolute;
+    background-color: #FFB200;
+    bottom: -10px;
+    width: 100%;
+    height: 10px;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16);
+}
+
+nav .logo{
+    font-size: 30px;
+    margin: 10px;
+}
+
+nav ul{
+    right:0;
+    position: absolute;
+    font-size: 30px;
+    margin: 10px;
+}
+
+nav .logo span:nth-child(1){
+    color: #FFB200;
+}
+
+nav .sidenav-trigger{
+    color: #FFB200;
+    position: absolute;
+    right: 0;
+}
+.container{
+    position: relative;
+    width: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;    
+}
+
+.container .box-content{
+    position:relative;
+    margin: 20px;
+    height: 85vh;
+    text-align: center;
+    background-color: white;
+    border-radius: 10px;
+    overflow-y: scroll;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.blue {
+    background-color: #293867!important;
+}
+
+.pink {
+    background-color: #E91E63!important;
+}
+
+.yellow {
+    background-color: #FFB200!important;
+}
+.software{
+    min-width: 60%;
+}
+ 
+.account{
+    min-width: 30%;
+}
+
+.container .box-content .box-title{
+    font-size: 30px;
+    font-weight: 100;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.container .box-content .box-items{
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.container .box-content .box-items .item{
+    position: relative;
+    color: white;
+    border-radius: 10px;
+    background-color: #293867;
+    font-size: 18px;
+    width: 150px;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 10px;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16);
+}
+.container .box-content .box-items .item i{
+    font-size: 50px;
+}
+
+.container .box-content .box-items .item:hover{
+    background-color: white!important;
+    color: #293867;
+}
+
+.pink:hover{
+    background-color: white;
+    color: #E91E63 !important;
+}
+.yellow:hover{
+    background-color: white;
+    color: #FFB200!important;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 30px;
+    bottom: 0;
+    background-color: #293867;
+    color: white;
+}
+
+footer .footer-copyright{
+    position: absolute;
+    right: 30px;
+}
+
+@media only screen and (max-width: 600px) {
+    .container .box-content{
+        height: auto;
+        margin-bottom: 20px;       
+    }
+    .software{
+        min-width: 90%;
+    }
+    
+    .account{
+        min-width: 90%;
+    }
+
+    .container{
+        flex-direction: column;
+    }
+}

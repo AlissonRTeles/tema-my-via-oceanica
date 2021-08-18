@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+            integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+        <link rel="stylesheet" href="./css/style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+            integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+        <!-- Compiled and minified CSS -->
+
+        <title>My Via Oceânica</title>
+    </head>
+    <body>
+
+        <nav>
+            <div class="logo">
+                <span>my</span><span>.viaoceanica.com</span>
+            </div>
+            <ul class="right hide-on-med-and-down">
+                <li><a href="sass.html">menu 1</a></li>
+                <li><a href="badges.html">menu 2</a></li>
+                <!-- Dropdown Trigger -->
+                <li>
+                    <!-- Dropdown Trigger -->
+                    <a class='dropdown-trigger' href='#' data-target='dropdown1'>Álisson R. Teles <i class="material-icons right">arrow_drop_down</i></a>
+                </li>
+                <!-- Dropdown Structure -->
+                <ul id='dropdown1' class='dropdown-content'>
+                    <li><a href="#!">one</a></li>
+                    <li><a href="#!">two</a></li>
+                    <li class="divider" tabindex="-1"></li>
+                    <li><a href="#!">three</a></li>
+                    <li><a href="#!"><i class="material-icons">view_module</i>four</a></li>
+                    <li><a href="#!"><i class="material-icons">cloud</i>five</a></li>
+                </ul>
+
+            </ul>
+            <a href="#" id="menu-nav" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+        </nav>
+
+        <ul id="slide-out" class="sidenav">
+            <li><a href="sass.html">menu 1</a></li>
+            <li><a href="badges.html">menu 2</a></li>
+        </ul>
+
+        <div class="container">
+            <div class="box-content software">
+                <span class="box-title">Software</span>
+                <div class="box-items">
+                    <div class="item yellow">
+                        <i class="fas fa-user-cog"></i>
+                        <div class="item-title">Meus dados</div>
+                    </div>
+                    <div class="item">
+                        <i class="fas fa-sitemap"></i>
+                        <div class="item-title">Website</div>
+                    </div>
+                    <div class="item pink">
+                        <i class="far fa-window-restore"></i>
+                        <div class="item-title">Webapps</div>
+                    </div>
+                    <div class="item">
+                        <i class="fas fa-user-cog"></i>
+                        <div class="item-title">Meus dados</div>
+                    </div>
+                </div>
+            </div>
+            <div class="box-content account">
+                <span class="box-title">Minha Conta</span>
+                <div class="box-items">
+                    <div class="item">
+                        <i class="fas fa-user-cog"></i>
+                        <div class="item-title">Meus dados</div>
+                    </div>
+                    <div class="item yellow">
+                        <i class="fas fa-shopping-basket"></i>
+                        <div class="item-title">Minha Store</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <div class="footer-copyright">
+                <span>2021-Via Oceânica - Todos os direitos reservados.</span>
+            </div>
+        </footer>
+
+        <!-- Compiled and minified JavaScript -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+            integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+        <script>
+            $(document).ready(function () {
+                $('.modal').modal();
+                $('.dropdown-trigger').dropdown();
+                // $('.sidenav').sidenav();
+            });
+        </script>
+    </body>
+</html>
