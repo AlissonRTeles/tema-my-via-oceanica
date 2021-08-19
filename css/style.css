@@ -98,7 +98,7 @@ nav .sidenav-trigger{
     width: 100%;
     display: flex;
     flex-flow: row wrap;
-    justify-content: center;
+    justify-content: flex-start;
 }
 
 .container .box-content .box-items .item{
