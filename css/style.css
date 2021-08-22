@@ -136,6 +136,18 @@ nav .sidenav-trigger{
     color: #FFB200!important;
 }
 
+.sidenav{
+    background-color: #293867;
+}
+
+.sidenav li a{
+     color: white;
+     font-size: large;
+}
+
+.sidenav li a:hover{
+    border-right:5px solid #FFB200;
+}
 footer {
     display: flex;
     align-items: center;
